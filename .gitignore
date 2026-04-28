@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 /*_cache/
-/.quarto
+/.quarto/
+.DS_Store
