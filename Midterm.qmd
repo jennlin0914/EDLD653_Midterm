@@ -1,0 +1,32 @@
+---
+title: "Midterm"
+author: "Zhen Lin"
+date: "04/27/2026"
+output: 
+  html_document:
+  code_folding: hide
+embed-resources: true
+execute: 
+  cache: true
+---
+
+```{r}
+library(tidyverse)
+library(glue)
+library(rio)
+library(remotes)
+library(gapr)
+
+
+```
+
+```{r}
+download_file <- function(year) {
+  link <- glue::glue("https://www.oregon.gov/ode/educator-resources/assessment/TestResults20{year}/pagr_schools_ela_raceethnicity_{year-1}{year}.xlsx")
+  rio::import(link, setclass = "tibble", na = c("-", "--", "*"))
+}
+```
+
+```{r}
+
+```
