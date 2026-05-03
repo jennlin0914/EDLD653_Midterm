@@ -8,6 +8,7 @@ output:
 embed-resources: true
 execute: 
   cache: true
+  warning: false
 ---
 
 ```{r}
